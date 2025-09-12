@@ -53,11 +53,11 @@ nav ol li a:link{
 
 /* Fundo principal da página */
 #page {
-  display: flex;
+  display: block;
   justify-content: center;  /* centraliza horizontalmente */
   align-items: center;      /* centraliza verticalmente */
-  min-height: 100vh;        /* ocupa toda a altura da tela */
-  width: 100vw;             /* ocupa toda a largura da tela */
+  min-height: auto;        /* ocupa toda a altura da tela */
+  max-width: 100%;             /* ocupa toda a largura da tela */
   
 }
 /*Pequeno CSS local para garantir que o vídeo fique de fundo*/
