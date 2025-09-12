@@ -1,6 +1,8 @@
 #nave {
-	width: 1080px;
+  max-width: 1080px;
+	width: 100%;
 	margin: 0 auto;
+  padding: 10px;
 }
 
 a:link, a:active, a:visited{
@@ -21,12 +23,13 @@ nav ul {
 }
 
 nav ol {
-	list-style: nome;
-	margin: 20px;
-	float: right;
-   list-style-type: none; /* remove bolinhas e números */
-  padding: 0;            /* remove espaço padrão da esquerda */
-  margin: 0;   
+	   display: flex;
+  flex-wrap: wrap;    /* quebra em várias linhas no celular */
+  justify-content: center;
+  gap: 15px;
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;  
 
 }
 nav ol li {
@@ -34,8 +37,6 @@ nav ol li {
 }
 nav ol li a:link{
 	display: block;
-	margin-right: 35px;
-	padding-bottom:3px ;
 	text-transform: uppercase;
 }
 
@@ -81,14 +82,24 @@ h2 {
 
 /* Conteúdo centralizado com fundo próprio */
 #conteudo {
-  border-radius: 50px;
+  border-radius: 20px;
   font-size: 20px;
-  box-sizing: border-box; /* nao soma os paddind se não o width passaria de 800px */
-  width: 800px;
-  padding:24px;
+  box-sizing: border-box;
+  width: 100%;          /* ocupa toda a largura disponível */
+  max-width: 800px;     /* nunca passa de 800px (bom no desktop) */
+  padding: 24px;
   background-color: #efef7b;
   animation: pulse 2s infinite;
-  margin: 0 auto; /* primeiro 48px borda de cima e embaico auto centraliza a page */
+  margin: 20px auto;    /* centraliza horizontalmente */
+}
+
+/* Ajuste para celular */
+@media (max-width: 480px) {
+  #conteudo {
+    font-size: 16px;    /* fonte menor para caber */
+    padding: 12px;      /* menos espaçamento */
+    border-radius: 12px;
+  }
 }
 
 #familia {
@@ -113,25 +124,28 @@ h2 {
 }
 
 img {
-   margin: 0px 200px;px ;
-    display: flex;
-  justify-content: center;  /* centraliza horizontalmente */
-  align-items: center;      /* centraliza verticalmente */
+   margin:20px auto ;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-#imagem {
-    margin: 0px 200px;px ;
-    display: flex;
-  justify-content: center;  /* centraliza horizontalmente */
-  align-items: center;      /* centraliza verticalmente */
+/* ====== MAPA E IFRAME ====== */
+iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
 }
 
 footer {
     text-align: center;
 }
 
-h3 {
-  color: blue;
+/* ====== HEADERS ====== */
+h1, h2, h3 {
+  text-align: center;
+  word-wrap: break-word;
 }
 
 .whatsapp-button {
