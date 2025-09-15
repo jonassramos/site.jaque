@@ -1,3 +1,4 @@
+
 #nave {
   max-width: 1080px;
 	width: 100%;
@@ -50,6 +51,7 @@ nav ol li a:link{
   height: 100%;
   width: 100%;
   font-family: Arial, sans-serif;
+  
 }
 
 /* Fundo principal da página */
@@ -66,32 +68,93 @@ nav ol li a:link{
   position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-1}
 h1 {
   color: blue;
+  font-family:Roboto;
 }
 
+.container {
+  display:flex;
+  width:100%
+  height:100vh;
+  justify-content:center;
+  align-items:center:
+}
+
+.msg {
+  display:block;
+  color:white ;
+  font-size:30px;
+  background-color:black;
+  font-weight:700;
+  border-right:16px solid #f1e100;
+  white-space:nowrap;
+  overflow:hidden;
+  width:30ch;
+  animation:mark .5s step-end infinite, write 3s steps(22,end) infinite;
+}
+
+@keyframes mark{
+  50%{
+    border-right-color:transparent;
+  }
+}
+
+@keyframes write {
+  0%{
+    width: 0;
+  }
+}
+
+
 h2 {
-  color:black;
+  color:white;
   animation: pulse 2s infinite;
-  background-color:#25d366 ;
+  background-color:#25d366;
   border-radius: 50px;
    transform: translateY(-3px);
     padding: 14px 20px;
     width: 300px;
+    font-family:Roboto;
 
+}
+
+h3 {
+   font-family:Roboto;
 }
 
 
 /* Conteúdo centralizado com fundo próprio */
 #conteudo {
-  border-radius: 20px;
-  font-size: 20px;
-  box-sizing: border-box;
+  border-radius:100px;
   width: 100%;          /* ocupa toda a largura disponível */
   max-width: 800px;     /* nunca passa de 800px (bom no desktop) */
   padding: 24px;
-  background-color: #efef7b;
+  background-color: opacity:0,5; #efef7b;
+  
   animation: pulse 2s infinite;
   margin: 20px auto;    /* centraliza horizontalmente */
+  font-weight:bold;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
+
+p {
+
+  color:white;
+  animation: pulse 2s infinite;
+  background-color:#23282b;
+  border-radius: 50px;
+  transform: translateY(-3px);
+  padding: 18px 28px;
+  width: 300px;
+  font-size:20px;
+  font-family: "Cinzel";
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
 
 /* Ajuste para celular */
 @media (max-width: 480px) {
@@ -239,3 +302,4 @@ h1, h2, h3 {
   .instagram-btn .ig-label { display: none; padding-left: 0; }
   .instagram-btn { padding: 8px; border-radius: 50%; width: 44px; justify-content: center; }
 }
+
