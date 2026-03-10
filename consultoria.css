@@ -1,0 +1,63 @@
+.hero-consultoria{
+
+min-height:60vh;
+padding:120px 10%;
+
+background:
+linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+url("img/escritorio.png") center/cover no-repeat;
+
+color:white;
+text-align:center;
+
+}
+
+.hero-consultoria h1{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.hero-consultoria p{
+max-width:700px;
+margin:auto;
+line-height:1.7;
+font-size:18px;
+}
+
+.conteudo{
+
+padding:80px 10%;
+max-width:900px;
+margin:auto;
+text-align:center;
+
+}
+
+.conteudo h2{
+font-size:30px;
+margin-bottom:20px;
+color:#1e3a34;
+}
+
+.conteudo p{
+line-height:1.7;
+margin-bottom:20px;
+}
+
+.lista{
+list-style:none;
+margin-top:20px;
+}
+
+.lista li{
+margin-bottom:10px;
+font-size:18px;
+}
+
+
+.cta{
+text-align:center;
+padding:60px;
+}
+
+
